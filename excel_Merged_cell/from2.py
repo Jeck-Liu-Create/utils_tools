@@ -40,14 +40,14 @@ for sheetName in name_list:
                     firstMergeRowNumber = rowNumber
                     mergedRowCount += 1
                 else:
-                    mergedRowCount += 1
-                    dw_sheet.merge_cells(
-                        start_row=firstMergeRowNumber,
-                        end_row=rowNumber - 1,
-                        start_column=columnNumber,
-                        end_column=columnNumber)
-                    dw_sheet.cell(row=firstMergeRowNumber,
-                                  column=columnNumber).value = mergeValue
+                    # mergedRowCount += 1
+                    # dw_sheet.merge_cells(
+                    #     start_row=firstMergeRowNumber,
+                    #     end_row=rowNumber - 1,
+                    #     start_column=columnNumber,
+                    #     end_column=columnNumber)
+                    # dw_sheet.cell(row=firstMergeRowNumber,
+                    #               column=columnNumber).value = mergeValue
                     # if columnNumber == 1:
 
                         # tempValueCol5 = 0
